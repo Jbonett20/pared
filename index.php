@@ -1,1 +1,12 @@
-<?php header("location:views");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURO INFORMATIVO</title>
+</head>
+<body>
+    <h3>por fin</h3>
+    <h2>practicando Github</h2>
+</body>
+</html>
