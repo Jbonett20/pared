@@ -6,7 +6,9 @@ if(isset($_POST)  && !empty($_POST)){
         $password =  trim($_POST["password"]);
        include("../models/login.php");
        $response = user::login($usuario,$password);
-  
+       echo '<pre>';
+       print_r($response);
+       echo '</pre>';
 
 
     }

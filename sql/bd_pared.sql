@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-11-2024 a las 02:11:56
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.0.30
+-- Tiempo de generación: 07-11-2024 a las 01:21:07
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,7 +34,7 @@ CREATE TABLE `user` (
   `identification` int(50) NOT NULL,
   `email` varchar(70) NOT NULL,
   `usuario` varchar(30) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `date_creation` datetime NOT NULL DEFAULT current_timestamp(),
   `status` int(2) NOT NULL DEFAULT 1 COMMENT '1 activo 2 inactivo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -44,7 +44,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `name`, `last_name`, `identification`, `email`, `usuario`, `password`, `date_creation`, `status`) VALUES
-(1, 'jeison', 'amell', 123456, 'jeison@gmail.com', 'jeison', '123456', '2024-11-04 19:30:08', 1);
+(1, 'jeison', 'amell', 123456, 'jeison@gmail.com', 'jeison', '$2y$10$QT.3vmQo9dxtIriJAhxr4.ypww02k0bft27fJHh14nu/gRwQt4c0K', '2024-11-04 19:30:08', 1);
 
 --
 -- Índices para tablas volcadas
@@ -64,7 +64,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
