@@ -11,49 +11,50 @@
 
 <div class="container mt-5">
     <h2>Formulario de Registro</h2>
-    <form>
+    <form action="../controllers/usuarios.php"method="post">
+    <input id="register" name="register" type="hidden"  />
         <!-- Nombre -->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre"required >
         </div>
 
         <!-- Apellido-->
         <div class="mb-3">
             <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="last_name" placeholder="ingresa tu apellido">
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="ingresa tu apellido"required>
         </div>
 
         <!-- identificacion -->
         <div class="mb-3">
             <label for="identificacion" class="form-label">identificacion</label>
-            <input type="text" class="form-control" id="identification" placeholder="ingresa tu identificacion">
+            <input type="text" class="form-control" id="identification" name="identification" placeholder="ingresa tu identificacion"required>
         </div>
 
         
  <!-- correo-->
  <div class="mb-3">
             <label for="correo" class="form-label">Correo</label>
-            <input type="email" class="form-control" id="email" placeholder="ingresa tu correo electronico">
+            <input type="email" class="form-control" id="email" name="email" placeholder="ingresa tu correo electronico"required>
         </div>
 
          <!-- usuario -->
          <div class="mb-3">
             <label for="usuario" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="usuario" placeholder="ingresa tu usuario">
+            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="ingresa tu usuario"required>
         </div>
 
          <!-- contraseña -->
          <div class="mb-3">
             <label for="contraseña" class="form-label">contraseña</label>
-            <input type="text" class="form-control" id="password" placeholder="ingresa tu contraseña">
+            <input type="text" class="form-control" id="password" name="password" placeholder="ingresa tu contraseña"required>
         </div>
        
 
         <!-- Fecha de creacion -->
         <div class="mb-3">
             <label for="fechade cracion" class="form-label">Fecha de creacion</label>
-            <input type="date" class="form-control" id="date_creation">
+            <input type="date" class="form-control" id="date_creation"placeholder="ingrese la fecha"required>>
         </div>
 
         <!-- Botón de Enviar -->
