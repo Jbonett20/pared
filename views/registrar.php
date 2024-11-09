@@ -49,13 +49,7 @@
             <label for="contraseña" class="form-label">contraseña</label>
             <input type="text" class="form-control" id="password" name="password" placeholder="ingresa tu contraseña"required>
         </div>
-       
-
-        <!-- Fecha de creacion -->
-        <div class="mb-3">
-            <label for="fechade cracion" class="form-label">Fecha de creacion</label>
-            <input type="date" class="form-control" id="date_creation"placeholder="ingrese la fecha"required>>
-        </div>
+    
 
         <!-- Botón de Enviar -->
         <button type="submit" class="btn btn-primary">Guardar</button>

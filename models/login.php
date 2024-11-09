@@ -14,6 +14,7 @@ class User {
         
         // Verificar si el usuario existe
         if ($user) {
+          
             // El usuario existe, ahora verificamos la contraseña
             if (password_verify($password, $user['password'])) {
                 // Contraseña correcta
