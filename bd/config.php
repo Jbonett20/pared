@@ -1,8 +1,7 @@
 <?php
 include("datos.php");
 try {
-    $dsn = "mysql:host=localhost;dbname=$dbname";
-    $dbh = new PDO($dsn, $user, $password);
+    $dbh = new PDO($dsn, dbuser, dbpassword);
 } catch (PDOException $e){
     echo $e->getMessage();
 }
