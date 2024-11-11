@@ -1,5 +1,5 @@
 <?php
-$dbname="bd_pared";
-$dsn = "mysql:host=localhost;dbname=$dbname";
-$user="root";
-$password="";
+define('dbname','bd_pared');
+define('dbuser','root');
+define('dbpassword','');
+$dsn = "mysql:host=localhost; dbname=". dbname;
