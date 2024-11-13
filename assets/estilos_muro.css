@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+.container {
+    border: 1px solid #ccc; /* Borde del contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo del formulario */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar el texto dentro del contenedor */
+    width: 400px; /* Ancho del contenedor */
+}
+
+input[type="text"], textarea {
+    width: 100%; /* Ancho del textbox y textarea */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde del textbox y textarea */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    margin: 5px; /* Espaciado entre botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    background-color: #007BFF; /* Color de fondo para el botón */
+    color: white; /* Color del texto */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
