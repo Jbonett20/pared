@@ -11,6 +11,7 @@ if(isset($_POST)  && !empty($_POST)){
 
         include('../models/usuarios.php'); 
         $response = usuarios::registrar($nombre, $apellido, $identificacion, $correo, $usuario, $contraseña);
+        
     }
 }else{
     
