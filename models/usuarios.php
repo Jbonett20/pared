@@ -18,9 +18,9 @@ class usuarios {
             $stmt = $dbh->prepare($sql)->execute([$nombre,$apellido,$identificacion,$correo,$usuario,$hashedPassword]);
             $user = $dbh->lastInsertId();
             if(!empty($user) || $user != 0){
-                echo "Usuario creado con exito";
+               header('location: ../index.php');
             }else{
-                echo "Error al crear el usuario";
+                echo 'error';
             }
               
        }catch(PDOException $e){
@@ -31,9 +31,8 @@ class usuarios {
     
     public static function editar($id) {
         try{
-            $stm=$this->pdo->prepare("UPDATE ".self::TABLE." SET nombre=?, apellido=?,  
-        identificacion=?,correo=?,usuario=?,clave=? WHERE id=?");
-            $stm->execute(array($this->nombre,$this->apellido,$this->identificacion,$this->correo,$this->usuario,$this->clave,$this->id));
+            
+           
           }catch(PDOException $e){
             echo $e->getMessage();
           }
@@ -42,8 +41,7 @@ class usuarios {
     public static function eliminar($id){
         try
         {
-            $stm = $this->pdo->prepare("DELETE FROM $this->table WHERE id=?");
-            $stm->execute(array($id));
+           
         }
         catch (PDOException $e)
         {
