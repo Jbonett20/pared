@@ -1,7 +1,6 @@
 <?php
-
-if(isset($_POST)  && !empty($_POST)){
-    if(isset($_POST["register"])){
+if (isset($_POST) && !empty($_POST)) {
+    if (isset($_POST["register"])) {
         $nombre = trim($_POST["name"]);
         $apellido = trim($_POST["last_name"]);
         $identificacion = trim($_POST["identification"]);
@@ -11,8 +10,6 @@ if(isset($_POST)  && !empty($_POST)){
 
         include('../models/usuarios.php'); 
         $response = usuarios::registrar($nombre, $apellido, $identificacion, $correo, $usuario, $contraseña);
-        
+        header("location: ../views/registrar.php?response=" . urlencode($response));
     }
-}else{
-    
 }
